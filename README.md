@@ -56,6 +56,3 @@ Si vous souhaitez ajouter de nouveaux mots, vous pouvez :
 
 ## Auteur
 Ce projet a été réalisé par Bilel BEN TAHER.
-
-## Licence
-Ce projet est sous licence MIT.
