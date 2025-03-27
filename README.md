@@ -1,7 +1,7 @@
 # Hangman Game C++
 
 ## Description
-Ce projet est une implémentation du jeu du Pendu en C++. L'objectif du jeu est de deviner un mot en proposant des lettres une à une avant d'atteindre la limite d'erreurs autorisée (10 tentatives).
+Ce projet est une implémentation du jeu Hangman en C++. L'objectif du jeu est de deviner un mot en proposant des lettres une à une avant d'atteindre la limite d'erreurs autorisée (10 tentatives).
 
 Le jeu intègre des fonctionnalités telles que :
 - Affichage du pendu au fur et à mesure des erreurs
@@ -50,10 +50,12 @@ Si vous souhaitez ajouter de nouveaux mots, vous pouvez :
 - Ajouter manuellement des mots au fichier `words.txt` (un mot par ligne).
 
 ## Capture d'écran
-![Aperçu du jeu Pendu](images/hangman_game.png)[Deuxième aperçu](images/hangman_game1.png)[Troisième aperçu](images/hangman_game2.png)
+![Aperçu du jeu Pendu](images/hangman_game.png)
+![Deuxième aperçu](images/hangman_game1.png)
+![Troisième aperçu](images/hangman_game2.png)
 
 ## Auteur
-Ce projet a été réalisé par [Votre Nom].
+Ce projet a été réalisé par Bilel BEN TAHER.
 
 ## Licence
 Ce projet est sous licence MIT.
