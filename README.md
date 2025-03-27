@@ -1,4 +1,4 @@
-# Jeu du Pendu en C++
+# Hangman Game C++
 
 ## Description
 Ce projet est une implémentation du jeu du Pendu en C++. L'objectif du jeu est de deviner un mot en proposant des lettres une à une avant d'atteindre la limite d'erreurs autorisée (10 tentatives).
