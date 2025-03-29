@@ -12,7 +12,6 @@ Le jeu intègre des fonctionnalités telles que :
 
 ## Installation et Exécution
 ### Prérequis
-- Un système Windows (le jeu utilise `windows.h`)
 - Un compilateur compatible C++ (MinGW, MSVC, etc.)
 
 ### Compilation
