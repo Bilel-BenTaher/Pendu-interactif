@@ -1,4 +1,4 @@
-# Hangman Game C++
+# Hangman Game 
 
 ## Description
 Ce projet est une implémentation du jeu Hangman en C++. L'objectif du jeu est de deviner un mot en proposant des lettres une à une avant d'atteindre la limite d'erreurs autorisée (10 tentatives).
