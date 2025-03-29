@@ -10,24 +10,21 @@ Le jeu intègre des fonctionnalités telles que :
 - Possibilité d'ajouter de nouveaux mots
 - Options d'aide et d'abandon
 
-## Prérequis
-- Un compilateur C++ (g++ ou MSVC)
-- Un terminal supportant l'affichage ANSI (pour Linux/macOS)
+## Installation et Exécution
+### Prérequis
+- Un système Windows (le jeu utilise `windows.h`)
+- Un compilateur compatible C++ (MinGW, MSVC, etc.)
 
-## Compilation et Exécution
-
-### Windows
-Utilisez MinGW ou MSVC pour compiler le programme :
-```sh
- g++ -o hangman.exe hangman.cpp
- ./hangman.exe
-```
-
-### Linux/macOS
-```sh
-g++ -o hangman hangman.cpp
-./hangman
-```
+### Compilation
+1. Ouvrez un terminal ou une invite de commande.
+2. Compilation sous Windows (MinGW) :
+   ```sh
+   g++ -o hangman Src/main.cpp Src/hangman.cpp Src/drawing.cpp Src/word_utils.cpp Src/helpers.cpp -IInc
+   ```
+3. Exécution :
+   ```sh
+    hangman.exe
+   ```
 
 ## Fonctionnalités
 - **Jeu interactif** : Les joueurs peuvent deviner des lettres une à une.
