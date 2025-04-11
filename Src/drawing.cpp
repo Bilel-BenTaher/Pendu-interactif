@@ -19,13 +19,13 @@ void DrawHangman(int guessCount) {
     std::vector<std::string> hangmanDrawing = {
         " +---+   ",  // Base toujours visible
         guessCount >= 1 ? " |   |   " : "     |   ",  // Poteau vertical
-        guessCount >= 3 ? " O   |   " : (guessCount >= 1 ? "     |   " : "         "),  // Tête
+        guessCount >= 3 ? " O   |   " : (guessCount >= 1 ? "     |   " : "     |   "),  // Tête
         guessCount >= 6 ? "/|\\  |   " :  // Corps complet
             (guessCount >= 5 ? "/|   |   " :  // Bras droit
-            (guessCount >= 4 ? "/     |   " : "      |   ")),  // Bras gauche
+            (guessCount >= 4 ? "/    |   " : "     |   ")),  // Bras gauche
         guessCount >= 7 ? " |   |   " : "     |   ",  // Tronc
         guessCount >= 9 ? "/ \\  |___" :  // Jambes complètes
-            (guessCount >= 8 ? "/     |___" : "      |___")  // Jambe gauche
+            (guessCount >= 8 ? "/    |___" : "     |___")  // Jambe gauche
     };
 
     // Applique la couleur rouge si des erreurs ont été commises
@@ -65,16 +65,8 @@ void PrintLetters(const std::string& input, char from, char to, const std::strin
             s += " ";
         } else {
             // Lettre déjà proposée
-            bool isInWord = (word.find(upperChar) != std::string::npos);
-#ifdef _WIN32
-            SetConsoleColor(isInWord ? HangmanColors::CORRECT : HangmanColors::WRONG);
-#else
-            std::cout << (isInWord ? HangmanColors::CORRECT : HangmanColors::WRONG);
-#endif
-            s += i;
             s += " ";
-            ResetConsoleColor();
-        }
+        }  
     }
     PrintMessage(s, false, false, false);
 }
